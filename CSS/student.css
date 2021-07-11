@@ -183,6 +183,12 @@ section {
     font-size: 19px;
 }
 
+.accordion-item a{
+    text-decoration :none;
+    color:#fff;
+}
+
+
 .accordion-link i {
     color: #e7d5ff;
     padding: .5rem;

@@ -44,7 +44,11 @@
     font-family: 'Roboto';
     font-size: 20px;
 }
-
+.userStyle{
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
 .contact-us {
     border-style: none;
 }

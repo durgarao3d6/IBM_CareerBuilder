@@ -11,7 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a237215e72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href='CSS/index.css'>
-    <script src="./JS/index.js"></script>
+    <!--<script src="./JS/index.js" defer></script>-->
     <title>Career Builder</title>
 </head>
 
@@ -40,8 +40,11 @@
                     <li class="nav-item">
                         <a class="nav-link mr-3" id="navItem3" href="#contactUsSection">Contact Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="login">
                         <a class="nav-link mr-3" id="navItem5" data-toggle="modal" data-target="#exampleModal" href="#staticBackdrop">Log in / Sign up</a>
+                    </li>
+                    <li class="nav-item" id="user">
+
                     </li>
                 </ul>
             </div>
@@ -50,7 +53,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <form class="m-3" id="userLogin" onSubmit="login()">
+                        <form class="m-3" id="userLogin">
                             <div class="form-group row">
                                 <div class="col-sm-10">
                                     <input type="password" placeholder="Username" class="form-control" id="username">
