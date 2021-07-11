@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-heading {
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 30px;
+    color: blue;
+}
+
+.navbar-bg {
+    background-color: #6699ff;
+}
+
+.website-logo {
+    width: 50px;
+}
+
+#navItem1 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem2 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem3 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem4 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem5 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.contact-us {
+    border-style: none;
+}
+
+.student-bg {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    width: 100vw;
+    background-size: cover;
+    padding: 30px;
+}
+
+.student-bgh {
+    font-family: 'Sans-Serif';
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.student-bgp {
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.career-bg {
+    background-color: rgba(28, 117, 187, .05);
+}
+
+.career-path-img {
+    width: 100%;
+}
+
+.student-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.student-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 19px;
+}
+
+.custom-button1 {
+    color: white;
+    background-color: #ed555a;
+    width: 280px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.wscg-card-description {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #7b8794;
+}
+
+.wscg-card-title {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    color: #323f4b;
+}
+
+.wscg-card-image {
+    height: 90px;
+    width: 87px;
+}
+
+.wscg-card {
+    background-color: white;
+    text-align: center;
+    border-style: none;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wscg-section-description {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #5a7184;
+}
+
+.wscg-section-heading {
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.section-bg {
+    background-color: rgba(28, 117, 187, .05);
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #3c4053; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item {
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+}
+
+.accordion-link {
+    /* font-size: 1.6rem; */
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 19px;
+}
+
+.accordion-link i {
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+.accordion-link .ion-md-remove {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.accordion-item:target .accordion-link .ion-md-add {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove {
+    display: block;
+}
+
+.answer p {
+    padding: 1rem;
+    color: rgba(255, 255, 255, .8);
+    /* font-size: 1.4rem; */
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 17px;
+    text-align: left;
+}
+
+.accordion-item:target .answer {
+    max-height: inherit;
+}
