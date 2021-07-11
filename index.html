@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a237215e72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href='CSS/index.css'>
+    <title>Career Builder</title>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-bg fixed-top">
+            <a class="navbar-brand main-heading" href="#">
+                <img class="website-logo" src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625328373/samples/IBM/cb-logo_cua766.png" />
+                <span style="font-weight:bold">C</span><span style="color:#ffffff">areer</span>
+                <span style="font-weight:bold">B</span><span style="color:#ffffff">uilder</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link mr-3" id="navItem1" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" id="navItem2" href="#wcuSection">Why Choose Us?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" id="navItem4" href="#followUsSection">Follow Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" id="navItem3" href="#contactUsSection">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-3" id="navItem5" data-toggle="modal" data-target="#exampleModal" href="#staticBackdrop">Log in / Sign up</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="m-3" id="userLogin">
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <input type="password" placeholder="Username" class="form-control" id="username">
+                                    <p class="errorMessage" id="usernameErrMsg"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <input type="password" placeholder="Password" class="form-control" id="password">
+                                    <p class="errorMessage" id="passwordErrMsg"></p>
+                                </div>
+                                <div class="form-group row m-3">
+                                    <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="pswd-fyp mr-5"> Creat Your Account</a>
+                                    <a href="#" class="pswd-fyp"> Forget Your Password?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Create Your Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="userForm">
+                            <div class="mb-3">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name">
+                                <p class="errorMessage" id="nameErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name">Email</label>
+                                <input type="text" class="form-control" id="email">
+                                <p class="errorMessage" id="emailErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="text" class="form-control" id="mobile">
+                                <p class="errorMessage" id="mobileErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pswd">Password</label>
+                                <input type="password" class="form-control" id="pswd">
+                                <p class="errorMessage" id="pswdErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <h1 class="gender-field-heading">Gender</h1>
+                                <input type="radio" id="genderMale" name="gender" value="Male" checked />
+                                <label for="genderMale">Male</label>
+                                <input type="radio" id="genderFemale" name="gender" value="Female" class="ml-2" />
+                                <label for="genderFemale">Female</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="category">Category</label>
+                                <select id="category" class="form-control">
+                                    <option value="Student" selected>Student</option>
+                                    <option value="Parent">Parent/Guardian</option>
+                                    <option value="Career Counsellor">Career Counsellor</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="education">Educational Background</label>
+                                <select id="education" class="form-control">
+                                    <option value="BeforeSSC">Class (1-9)</option>
+                                    <option value="SSC">SSC</option>
+                                    <option value="ITI">ITI</option>
+                                    <option value="Polytechnic">Polytechnic</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Degree">Degree</option>
+                                    <option value="B.tech" selected>B.tech</option>
+                                    <option value="M.tech">M.tech</option>
+                                    <option value="MS">MS</option>
+                                    <option value="WorkingProfessional">Working Professional</option>
+                                    <option value="MS">NA</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="interest">Interests</label>
+                                <select id="interest" class="form-control">
+                                    <option value="FrontEnd">FrontEnd Developer</option>
+                                    <option value="BackEnd">BackEnd Developer</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location">Select Your Country</label>
+                                <select id="location" class="form-control">
+                                    <option value="India" selected>India</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location">Select Your State</label>
+                                <select id="location" class="form-control">
+                                    <option value="AndhraPradesh" selected>Andhra Pradesh</option>
+                                    <option value="Telangana">Telangana</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="explore-program-section mt-5 pt-5" id="exploreProgramSection">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="program-section-heading">
+                            Explore Career Programs
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow program-item-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625376583/samples/IBM/study-abroad-students_zdgpfl.jpg" class="program-item-image w-100" />
+                            <h1 class="program-card-title">
+                                Students
+                            </h1>
+                            <button class="button btn btn-info" onclick="display('sectionStudents')">Explore more...</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow program-item-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625377752/samples/IBM/Lead-Like-a-Parent_wvlkuf.jpg" class="program-item-image w-100" />
+                            <h1 class="program-card-title">
+                                Parents
+                            </h1>
+                            <button class="button btn btn-info" onclick="display('sectionParents')">Explore more...</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow program-item-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625378254/samples/IBM/primary-focus-career-coaching-vs-career-counseling_vxppxz.jpg" class="program-item-image w-100" />
+                            <h1 class="program-card-title">
+                                Career Coach
+                            </h1>
+                            <button class="button btn btn-info" onclick="display('sectionCareerCoach')">Explore more...</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow program-item-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625378415/samples/IBM/imh-explore-more_ttbery.svg" class="program-item-image w-100" />
+                            <h1 class="program-card-title">
+                                More Opportunities
+                            </h1>
+                            <button class="button btn btn-info" onclick="display('sectionMoreOpportunities')">Explore more...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="wcu-section pt-5 pb-5" id="wcuSection">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-section-heading">
+                            Why Choose Us?
+                        </h1>
+                        <p class="wcu-section-description">
+                            We choose to assess the skills, interests and traits of a candidate to provide better solution
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625381685/samples/IBM/evaluation-portable-network-graphics-educational-assessment-computer-icons-clip-art-png-favpng-9wfQTrhpx3eKTep29E6pcKZtE_r5j3ay-removebg-preview_dqf1rl.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Career Assessment Test</h1>
+                            <p class="wcu-card-description">
+                                A Career Assessment is a test designed to understand where your unique set of strengths, aptitudes and skills lie, in order to recommend the right careers for you.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625382398/samples/IBM/meeting-1019995_640_dfltmu.jpg" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">One-on-one Interactive Session</h1>
+                            <p class="wcu-card-description">
+                                Interactive sessions give a chance for students to see the future in a new light,
+                                which is their compassionate and considerate side, naturally taking away the students
+                                fear of being judged.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625382787/samples/IBM/cfbad01bc4399275d8f197ccfbc4c17c_yxrqah.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Scholarships</h1>
+                            <p class="wcu-card-description">
+                                Scholarships are awarded based upon various criteria, such as academic merit, diversity and inclusion, skill, financial need, among others.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625383271/samples/IBM/basic-rgb-136489451_uy06rx.jpg" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Internships</h1>
+                            <p class="wcu-card-description">
+                                Joining an internship gives you exposure to how corporates work
+                                and help you develop the right skills needed to join your dream
+                                company. We help you find a verified internship with a stipend.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="best-deal-section pt-5 pb-5" id="bestDealsection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625386886/17032066-3d-best-deal-button-click-here-block-text-over-white-background_iqfb8q.jpg" class="best-deal-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="best-deal-section-heading">
+                            Choose your career plan
+                        </h1>
+                        <p class="best-deal-section-description">
+                            Enjoy hassle-free payment with the plenitude of payment options
+                            available for you. Get your progress and locate yourself on a
+                            dashboard. Plus, get a 5% rewards on every friend recommend by you.
+                        </p>
+                        <button class="custom-button">Pay Now</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog mt-5">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">Gift Voucher</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png" class="w-100" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5" id="contactUsSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="https://res.cloudinary.com/dtdauosrh/image/upload/v1625384901/careerbuilder_logo_rx8w4p.png" class="career-builder-logo" />
+                        <h1 class="footer-section-mail-id">chooseyourcareer@careerbuilder.com</h1>
+                        <p class="footer-section-address">
+                            123 IT SEZ, Financial District, Hyderabad, Telangana, India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

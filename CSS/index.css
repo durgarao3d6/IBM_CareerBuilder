@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-heading {
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 30px;
+    color: blue;
+}
+
+.navbar-bg {
+    background-color: #6699ff;
+}
+
+.website-logo {
+    width: 50px;
+}
+
+#navItem1 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem2 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem3 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem4 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+#navItem5 {
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-size: 20px;
+}
+
+.contact-us {
+    border-style: none;
+}
+
+.bg-parents {
+    background-color: #eb3458;
+}
+
+.img-parents {
+    width: 270px;
+}
+
+.errorMessage {
+    font-family: "Roboto";
+    font-size: 14px;
+    color: #dc3545;
+}
+
+.gender-field-heading {
+    font-size: 18px;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.pswd-fyp {
+    font-family: 'Roboto';
+    font-size: 13px;
+    color: #000000;
+}
+
+.program-item-card {
+    border-radius: 16px;
+}
+
+.program-item-link {
+    color: #d0b200;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.program-card-title {
+    color: #323f4b;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 24px;
+}
+
+.program-item-image {
+    border-radius: 16px;
+    width: 290px;
+    height: 304px;
+}
+
+.program-section-heading {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 28px;
+    color: #183b56;
+}
+
+.explore-program-section {
+    background-color: white;
+}
+
+.wcu-card-description {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #7b8794;
+}
+
+.wcu-card-title {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 500;
+    color: #323f4b;
+}
+
+.wcu-card-image {
+    height: 90px;
+    width: 87px;
+}
+
+.wcu-card {
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e5eaf4;
+    border-radius: 16px;
+}
+
+.wcu-section-description {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #5a7184;
+}
+
+.wcu-section-heading {
+    font-family: 'Roboto';
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.wcu-section {
+    background-color: #f9fbfe;
+}
+
+.follow-us-section {
+    background-color: white;
+}
+
+.follow-us-section-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding: 22px 16px 14px 22px;
+}
+
+.icon {
+    color: #d0b200;
+    font-size: 35px;
+}
+
+.footer-section {
+    background-color: #e6faff;
+}
+
+.footer-section-mail-id {
+    color: #959ead;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.footer-section-address {
+    color: #959ead;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.career-builder-logo {
+    width: 140px;
+    height: 50px;
+}
+
+.thanking-customers-section {
+    background-image: radial-gradient(#fff8db, #fae38c);
+}
+
+.thanking-customers-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.thanking-customers-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.thanking-customers-section-img {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.thanking-customers-section-modal-title {
+    color: #d0b200;
+    font-weight: 800;
+}
+
+.custom-button {
+    color: white;
+    background-image: linear-gradient(#d0b200, #a58d00);
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.best-deal-section {
+    background-color: white;
+}
+
+.best-deal-section-img {
+    width: 270px;
+}
+
+.best-deal-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.best-deal-section-description {
+    color: #5a7184;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.payment-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 28px;
+}
+
+.custom-button {
+    color: white;
+    background-color: #d0b200;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
