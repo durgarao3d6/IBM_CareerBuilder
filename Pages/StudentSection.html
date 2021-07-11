@@ -46,6 +46,121 @@
                 </ul>
             </div>
         </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form class="m-3" id="userLogin">
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <input type="password" placeholder="Username" class="form-control" id="username">
+                                    <p class="errorMessage" id="usernameErrMsg"></p>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <input type="password" placeholder="Password" class="form-control" id="password">
+                                    <p class="errorMessage" id="passwordErrMsg"></p>
+                                </div>
+                                <div class="form-group row m-3">
+                                    <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="pswd-fyp mr-5"> Creat Your Account</a>
+                                    <a href="#" class="pswd-fyp"> Forget Your Password?</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Log in</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Create Your Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="userForm">
+                            <div class="mb-3">
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" id="name">
+                                <p class="errorMessage" id="nameErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="name">Email</label>
+                                <input type="text" class="form-control" id="email">
+                                <p class="errorMessage" id="emailErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile">Mobile Number</label>
+                                <input type="text" class="form-control" id="mobile">
+                                <p class="errorMessage" id="mobileErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pswd">Password</label>
+                                <input type="password" class="form-control" id="pswd">
+                                <p class="errorMessage" id="pswdErrMsg"></p>
+                            </div>
+                            <div class="mb-3">
+                                <h1 class="gender-field-heading">Gender</h1>
+                                <input type="radio" id="genderMale" name="gender" value="Male" checked />
+                                <label for="genderMale">Male</label>
+                                <input type="radio" id="genderFemale" name="gender" value="Female" class="ml-2" />
+                                <label for="genderFemale">Female</label>
+                            </div>
+                            <div class="mb-3">
+                                <label for="category">Category</label>
+                                <select id="category" class="form-control">
+                                    <option value="Student" selected>Student</option>
+                                    <option value="Parent">Parent/Guardian</option>
+                                    <option value="Career Counsellor">Career Counsellor</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="education">Educational Background</label>
+                                <select id="education" class="form-control">
+                                    <option value="BeforeSSC">Class (1-9)</option>
+                                    <option value="SSC">SSC</option>
+                                    <option value="ITI">ITI</option>
+                                    <option value="Polytechnic">Polytechnic</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option value="Degree">Degree</option>
+                                    <option value="B.tech" selected>B.tech</option>
+                                    <option value="M.tech">M.tech</option>
+                                    <option value="MS">MS</option>
+                                    <option value="WorkingProfessional">Working Professional</option>
+                                    <option value="MS">NA</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="interest">Interests</label>
+                                <select id="interest" class="form-control">
+                                    <option value="FrontEnd">FrontEnd Developer</option>
+                                    <option value="BackEnd">BackEnd Developer</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location">Select Your Country</label>
+                                <select id="location" class="form-control">
+                                    <option value="India" selected>India</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="location">Select Your State</label>
+                                <select id="location" class="form-control">
+                                    <option value="AndhraPradesh" selected>Andhra Pradesh</option>
+                                    <option value="Telangana">Telangana</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="student-bg text-center mt-5">
             <div class="container">
                 <div class="row">
